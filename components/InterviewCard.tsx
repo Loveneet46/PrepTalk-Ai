@@ -57,5 +57,4 @@ const InterviewCard = ({interviewId, userId,role,type,techstack,createdAt}: Inte
         </div>
     );
 };
-
 export default InterviewCard;
