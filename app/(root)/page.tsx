@@ -60,7 +60,7 @@ async function Home() {
                             <InterviewCard
                                 key={interview.id}
                                 userId={user.id}
-                                interviewId={interview.id}
+                                id={interview.id}
                                 role={interview.role}
                                 type={interview.type}
                                 techstack={interview.techstack}
@@ -82,7 +82,7 @@ async function Home() {
                             <InterviewCard
                                 key={interview.id}
                                 userId={user.id}
-                                interviewId={interview.id}
+                                id={interview.id}
                                 role={interview.role}
                                 type={interview.type}
                                 techstack={interview.techstack}
@@ -90,12 +90,11 @@ async function Home() {
                             />
                         ))
                     ) : (
-                        <p>There are no interviews available.</p>
+                        <p>Company Specific Interviews Coming Soon...</p>
                     )}
                 </div>
             </section>
         </>
     );
 }
-
 export default Home;
